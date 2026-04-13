@@ -1,0 +1,36 @@
+{
+  "$schema": "https://commander/skill-spec/v1",
+  "name": "<skill-name>",
+  "domain": "<content|engineering|research|ops|data|other>",
+  "trigger_keywords": [
+    "<phrase user would actually type>",
+    "<casual variant>",
+    "<formal variant>"
+  ],
+  "negative_triggers": [
+    "<what NOT to use this for — different tool handles it>"
+  ],
+  "retriggers": [
+    "<update X>",
+    "<re-run Y>",
+    "<fix the Z>"
+  ],
+  "responsibilities": [
+    "<concrete action 1>",
+    "<concrete action 2>"
+  ],
+  "expected_outputs": [
+    "<file1.md>",
+    "<file2.json>"
+  ],
+  "model_recommendation": "<opus|sonnet|haiku>",
+  "max_lines": 200,
+  "grounding_examples": [
+    {
+      "input": "<realistic user prompt>",
+      "expected_outcome": "<what a correct run produces>"
+    }
+  ],
+  "peer_skill_deps": [],
+  "data_class": "<public|internal|sensitive|pii>"
+}
